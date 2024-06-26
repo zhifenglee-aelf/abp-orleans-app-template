@@ -1,0 +1,876 @@
+2024-06-26 10:51:45.390 +08:00 [INF] Starting AbpOrleansAppTemplate.HttpApi.Host.
+2024-06-26 10:51:48.024 +08:00 [INF] Loaded ABP modules:
+2024-06-26 10:51:48.028 +08:00 [INF] - AbpOrleansAppTemplate.AbpOrleansAppTemplateHttpApiHostModule
+2024-06-26 10:51:48.030 +08:00 [INF]   - AbpOrleansAppTemplate.AbpOrleansAppTemplateHttpApiModule
+2024-06-26 10:51:48.030 +08:00 [INF]     - AbpOrleansAppTemplate.AbpOrleansAppTemplateApplicationContractsModule
+2024-06-26 10:51:48.030 +08:00 [INF]       - AbpOrleansAppTemplate.AbpOrleansAppTemplateDomainSharedModule
+2024-06-26 10:51:48.030 +08:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2024-06-26 10:51:48.030 +08:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2024-06-26 10:51:48.030 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2024-06-26 10:51:48.030 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2024-06-26 10:51:48.030 +08:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2024-06-26 10:51:48.030 +08:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2024-06-26 10:51:48.030 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2024-06-26 10:51:48.030 +08:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2024-06-26 10:51:48.030 +08:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2024-06-26 10:51:48.030 +08:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2024-06-26 10:51:48.030 +08:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2024-06-26 10:51:48.030 +08:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2024-06-26 10:51:48.030 +08:00 [INF]               - Volo.Abp.Threading.AbpThreadingModule
+2024-06-26 10:51:48.030 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2024-06-26 10:51:48.030 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2024-06-26 10:51:48.030 +08:00 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2024-06-26 10:51:48.030 +08:00 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2024-06-26 10:51:48.030 +08:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2024-06-26 10:51:48.030 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2024-06-26 10:51:48.030 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2024-06-26 10:51:48.030 +08:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2024-06-26 10:51:48.030 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2024-06-26 10:51:48.030 +08:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2024-06-26 10:51:48.030 +08:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2024-06-26 10:51:48.030 +08:00 [INF]         - Volo.Abp.OpenIddict.AbpOpenIddictDomainSharedModule
+2024-06-26 10:51:48.030 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2024-06-26 10:51:48.030 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2024-06-26 10:51:48.030 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2024-06-26 10:51:48.030 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2024-06-26 10:51:48.031 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2024-06-26 10:51:48.031 +08:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2024-06-26 10:51:48.031 +08:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2024-06-26 10:51:48.031 +08:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2024-06-26 10:51:48.031 +08:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2024-06-26 10:51:48.031 +08:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2024-06-26 10:51:48.031 +08:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2024-06-26 10:51:48.031 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2024-06-26 10:51:48.031 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2024-06-26 10:51:48.031 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2024-06-26 10:51:48.031 +08:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2024-06-26 10:51:48.031 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2024-06-26 10:51:48.031 +08:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2024-06-26 10:51:48.031 +08:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2024-06-26 10:51:48.031 +08:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2024-06-26 10:51:48.031 +08:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2024-06-26 10:51:48.031 +08:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2024-06-26 10:51:48.031 +08:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2024-06-26 10:51:48.031 +08:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2024-06-26 10:51:48.031 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2024-06-26 10:51:48.031 +08:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2024-06-26 10:51:48.031 +08:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2024-06-26 10:51:48.031 +08:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2024-06-26 10:51:48.031 +08:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2024-06-26 10:51:48.031 +08:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2024-06-26 10:51:48.031 +08:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2024-06-26 10:51:48.031 +08:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2024-06-26 10:51:48.031 +08:00 [INF]               - Volo.Abp.Caching.AbpCachingModule
+2024-06-26 10:51:48.031 +08:00 [INF]                 - Volo.Abp.Serialization.AbpSerializationModule
+2024-06-26 10:51:48.031 +08:00 [INF]               - Volo.Abp.Domain.AbpDddDomainSharedModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2024-06-26 10:51:48.031 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2024-06-26 10:51:48.031 +08:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2024-06-26 10:51:48.031 +08:00 [INF]   - AbpOrleansAppTemplate.AbpOrleansAppTemplateApplicationModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - AbpOrleansAppTemplate.AbpOrleansAppTemplateDomainModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2024-06-26 10:51:48.031 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2024-06-26 10:51:48.031 +08:00 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2024-06-26 10:51:48.031 +08:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2024-06-26 10:51:48.031 +08:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.OpenIddict.AbpOpenIddictDomainModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.PermissionManagement.OpenIddict.AbpPermissionManagementDomainOpenIddictModule
+2024-06-26 10:51:48.031 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2024-06-26 10:51:48.031 +08:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2024-06-26 10:51:48.031 +08:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2024-06-26 10:51:48.031 +08:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2024-06-26 10:51:48.031 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2024-06-26 10:51:48.031 +08:00 [INF]   - AbpOrleansAppTemplate.MongoDB.AbpOrleansAppTemplateMongoDbModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.PermissionManagement.MongoDB.AbpPermissionManagementMongoDbModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.MongoDB.AbpMongoDbModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.SettingManagement.MongoDB.AbpSettingManagementMongoDbModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.Identity.MongoDB.AbpIdentityMongoDbModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.Users.MongoDB.AbpUsersMongoDbModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.OpenIddict.MongoDB.AbpOpenIddictMongoDbModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.BackgroundJobs.MongoDB.AbpBackgroundJobsMongoDbModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.AuditLogging.MongoDB.AbpAuditLoggingMongoDbModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.TenantManagement.MongoDB.AbpTenantManagementMongoDbModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.FeatureManagement.MongoDB.AbpFeatureManagementMongoDbModule
+2024-06-26 10:51:48.031 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite.AbpAspNetCoreMvcUiLeptonXLiteThemeModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2024-06-26 10:51:48.031 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2024-06-26 10:51:48.031 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2024-06-26 10:51:48.031 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2024-06-26 10:51:48.031 +08:00 [INF]   - Volo.Abp.Account.Web.AbpAccountWebOpenIddictModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.Account.Web.AbpAccountWebModule
+2024-06-26 10:51:48.031 +08:00 [INF]       - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2024-06-26 10:51:48.031 +08:00 [INF]     - Volo.Abp.OpenIddict.AbpOpenIddictAspNetCoreModule
+2024-06-26 10:51:48.031 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2024-06-26 10:51:48.031 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2024-06-26 10:51:48.738 +08:00 [DBG] Started background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+2024-06-26 10:51:48.765 +08:00 [DBG] Started background worker: Volo.Abp.OpenIddict.Tokens.TokenCleanupBackgroundWorker
+2024-06-26 10:51:51.179 +08:00 [INF] User profile is available. Using '/Users/zhifenglee/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-06-26 10:51:51.476 +08:00 [INF] Initialized all ABP modules.
+2024-06-26 10:51:51.975 +08:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-06-26 10:51:52.017 +08:00 [INF] Now listening on: https://localhost:44376
+2024-06-26 10:51:52.019 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-26 10:51:52.021 +08:00 [INF] Hosting environment: Development
+2024-06-26 10:51:52.021 +08:00 [INF] Content root path: /Users/zhifenglee/Desktop/backend-app/aspnet-core/src/AbpOrleansAppTemplate.HttpApi.Host
+2024-06-26 10:51:52.347 +08:00 [ERR] This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+MongoDB.Driver.MongoCommandException: This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+ ---> MongoDB.Driver.MongoCommandException: Command aggregate failed: Transaction numbers are only allowed on a replica set member or mongos.
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.ProcessResponse(ConnectionId connectionId, CommandMessage responseMessage)
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.ExecuteAsync(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.ExecuteProtocolAsync[TResult](IWireProtocol`1 protocol, ICoreSession session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](IRetryableReadOperation`1 operation, RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(IReadBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](IReadBinding binding, IReadOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at Volo.Abp.Domain.Repositories.MongoDB.MongoDbRepository`2.GetListAsync(Boolean includeDetails, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.FeatureManagement.StaticFeatureSaver.UpdateChangedFeatureGroupsAsync(IEnumerable`1 featureGroupRecords)
+   at Volo.Abp.FeatureManagement.StaticFeatureSaver.SaveAsync()
+   at Volo.Abp.FeatureManagement.StaticFeatureSaver.SaveAsync()
+   at Volo.Abp.FeatureManagement.StaticFeatureSaver.SaveAsync()
+   at Volo.Abp.FeatureManagement.StaticFeatureSaver.SaveAsync()
+   at Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule.<>c__DisplayClass8_0.<<SaveStaticFeaturesToDatabaseAsync>b__1>d.MoveNext()
+2024-06-26 10:51:52.347 +08:00 [ERR] This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+MongoDB.Driver.MongoCommandException: This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+ ---> MongoDB.Driver.MongoCommandException: Command aggregate failed: Transaction numbers are only allowed on a replica set member or mongos.
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.ProcessResponse(ConnectionId connectionId, CommandMessage responseMessage)
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.ExecuteAsync(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.ExecuteProtocolAsync[TResult](IWireProtocol`1 protocol, ICoreSession session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](IRetryableReadOperation`1 operation, RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(IReadBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](IReadBinding binding, IReadOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at Volo.Abp.Domain.Repositories.MongoDB.MongoDbRepository`2.GetListAsync(Boolean includeDetails, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.UpdateChangedPermissionGroupsAsync(IEnumerable`1 permissionGroupRecords)
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.SaveAsync()
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.SaveAsync()
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.SaveAsync()
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.SaveAsync()
+   at Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule.<>c__DisplayClass8_0.<<SaveStaticPermissionsToDatabaseAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.AsyncPolicy.<>c__DisplayClass40_0.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2024-06-26 10:51:52.351 +08:00 [ERR] This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+MongoDB.Driver.MongoCommandException: This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+ ---> MongoDB.Driver.MongoCommandException: Command aggregate failed: Transaction numbers are only allowed on a replica set member or mongos.
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.ProcessResponse(ConnectionId connectionId, CommandMessage responseMessage)
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.ExecuteAsync(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.ExecuteProtocolAsync[TResult](IWireProtocol`1 protocol, ICoreSession session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](IRetryableReadOperation`1 operation, RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(IReadBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](IReadBinding binding, IReadOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at Volo.Abp.Domain.Repositories.MongoDB.MongoDbRepository`2.GetListAsync(Boolean includeDetails, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.SettingManagement.StaticSettingSaver.UpdateChangedSettingsAsync(List`1 SettingRecords)
+   at Volo.Abp.SettingManagement.StaticSettingSaver.SaveAsync()
+   at Volo.Abp.SettingManagement.StaticSettingSaver.SaveAsync()
+   at Volo.Abp.SettingManagement.StaticSettingSaver.SaveAsync()
+   at Volo.Abp.SettingManagement.StaticSettingSaver.SaveAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.SettingManagement.AbpSettingManagementDomainModule.<>c__DisplayClass8_0.<<SaveStaticSettingsToDatabaseAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.AsyncPolicy.<>c__DisplayClass40_0.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2024-06-26 10:51:58.002 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/ - null null
+2024-06-26 10:51:58.385 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:51:58.408 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:51:58.418 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:51:58.429 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:51:58.431 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:51:58.482 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:51:58.485 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:51:58.487 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:51:58.489 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:51:58.500 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:51:58.502 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:51:58.502 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:51:58.504 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:51:58.769 +08:00 [INF] Executing endpoint 'AbpOrleansAppTemplate.Controllers.HomeController.Index (AbpOrleansAppTemplate.HttpApi.Host)'
+2024-06-26 10:51:58.799 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller AbpOrleansAppTemplate.Controllers.HomeController (AbpOrleansAppTemplate.HttpApi.Host).
+2024-06-26 10:51:58.863 +08:00 [INF] Executing action method AbpOrleansAppTemplate.Controllers.HomeController.Index (AbpOrleansAppTemplate.HttpApi.Host) - Validation state: "Valid"
+2024-06-26 10:51:58.871 +08:00 [INF] Executed action method AbpOrleansAppTemplate.Controllers.HomeController.Index (AbpOrleansAppTemplate.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 1.1176ms.
+2024-06-26 10:51:58.887 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2024-06-26 10:51:58.895 +08:00 [INF] Executed action AbpOrleansAppTemplate.Controllers.HomeController.Index (AbpOrleansAppTemplate.HttpApi.Host) in 89.2772ms
+2024-06-26 10:51:58.895 +08:00 [INF] Executed endpoint 'AbpOrleansAppTemplate.Controllers.HomeController.Index (AbpOrleansAppTemplate.HttpApi.Host)'
+2024-06-26 10:51:58.919 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/ - 302 0 null 916.8347ms
+2024-06-26 10:51:58.920 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger - null null
+2024-06-26 10:51:58.927 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:51:58.928 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:51:58.929 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:51:58.929 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:51:58.929 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:51:58.931 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:51:58.931 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:51:58.931 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:51:58.931 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:51:58.932 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:51:58.932 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:51:58.932 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:51:58.933 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:51:58.940 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger - 301 0 null 19.207ms
+2024-06-26 10:51:58.943 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger/index.html - null null
+2024-06-26 10:51:58.951 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:51:58.951 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:51:58.951 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:51:58.951 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:51:58.951 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:51:58.951 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:51:58.951 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:51:58.951 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:51:58.951 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:51:58.951 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:51:58.951 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:51:58.951 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:51:58.951 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:51:59.036 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger/index.html - 200 null text/html;charset=utf-8 93.3954ms
+2024-06-26 10:51:59.046 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger/swagger-ui.css - null null
+2024-06-26 10:51:59.047 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:51:59.047 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:51:59.047 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:51:59.047 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:51:59.047 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:51:59.048 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:51:59.048 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:51:59.048 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:51:59.048 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:51:59.048 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:51:59.048 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:51:59.048 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:51:59.048 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:51:59.049 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger/ui/abp.js - null null
+2024-06-26 10:51:59.049 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger/swagger-ui-bundle.js - null null
+2024-06-26 10:51:59.049 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger/ui/abp.swagger.js - null null
+2024-06-26 10:51:59.049 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger/swagger-ui-standalone-preset.js - null null
+2024-06-26 10:51:59.050 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:51:59.050 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:51:59.050 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:51:59.050 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:51:59.050 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:51:59.050 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:51:59.050 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:51:59.050 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:51:59.050 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:51:59.050 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:51:59.050 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:51:59.050 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:51:59.050 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:51:59.050 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:51:59.050 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:51:59.050 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:51:59.050 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:51:59.050 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:51:59.051 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:51:59.051 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:51:59.051 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:51:59.051 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:51:59.051 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:51:59.051 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:51:59.051 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:51:59.051 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:51:59.079 +08:00 [INF] Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'N/A'
+2024-06-26 10:51:59.079 +08:00 [INF] Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'N/A'
+2024-06-26 10:51:59.080 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger/ui/abp.js - 200 3122 application/javascript 30.5581ms
+2024-06-26 10:51:59.080 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-06-26 10:51:59.080 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger/ui/abp.swagger.js - 200 4510 application/javascript 31.2634ms
+2024-06-26 10:51:59.082 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger/swagger-ui.css - 200 144929 text/css 35.9238ms
+2024-06-26 10:51:59.087 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-06-26 10:51:59.088 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 38.3862ms
+2024-06-26 10:51:59.090 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-06-26 10:51:59.090 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 41.4118ms
+2024-06-26 10:51:59.692 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger/favicon-32x32.png - null null
+2024-06-26 10:51:59.699 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:51:59.700 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:51:59.700 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:51:59.700 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:51:59.700 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:51:59.701 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:51:59.701 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:51:59.701 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:51:59.701 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:51:59.701 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:51:59.701 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:51:59.701 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:51:59.701 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:51:59.705 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-06-26 10:51:59.706 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger/favicon-32x32.png - 200 628 image/png 13.6376ms
+2024-06-26 10:52:00.204 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger/v1/swagger.json - null null
+2024-06-26 10:52:00.205 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger/favicon-32x32.png - null null
+2024-06-26 10:52:00.264 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:52:00.264 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:52:00.266 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:52:00.266 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:52:00.269 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:52:00.270 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:52:00.270 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:52:00.270 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:52:00.271 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:52:00.271 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:52:00.273 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:52:00.273 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:52:00.273 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:52:00.273 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:52:00.273 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:52:00.273 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:52:00.273 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:52:00.273 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:52:00.274 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:52:00.274 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:52:00.274 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:52:00.274 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:52:00.274 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:52:00.274 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:52:00.274 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:52:00.275 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:52:00.302 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-06-26 10:52:00.307 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger/favicon-32x32.png - 200 628 image/png 101.9342ms
+2024-06-26 10:52:00.638 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 449.0364ms
+2024-06-26 10:52:12.408 +08:00 [WRN] Current database does not support transactions. Your database may remain in an inconsistent state in an error case.
+2024-06-26 10:52:13.415 +08:00 [WRN] Current database does not support transactions. Your database may remain in an inconsistent state in an error case.
+2024-06-26 10:52:15.396 +08:00 [WRN] Current database does not support transactions. Your database may remain in an inconsistent state in an error case.
+2024-06-26 10:53:28.742 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/abp/Swashbuckle/SetCsrfCookie - null null
+2024-06-26 10:53:28.753 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:53:28.754 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:53:28.757 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:53:28.757 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:53:28.757 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:53:28.758 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:53:28.758 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:53:28.758 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:53:28.758 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:53:28.758 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:53:28.758 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:53:28.758 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:53:28.758 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:53:28.766 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2024-06-26 10:53:28.772 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle", page = ""}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2024-06-26 10:53:28.784 +08:00 [INF] Executing action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) - Validation state: "Valid"
+2024-06-26 10:53:28.805 +08:00 [INF] Executed action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 19.9582ms.
+2024-06-26 10:53:28.808 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 34.3262ms
+2024-06-26 10:53:28.808 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2024-06-26 10:53:28.809 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/abp/Swashbuckle/SetCsrfCookie - 204 null null 68.3289ms
+2024-06-26 10:53:28.836 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/api/app/book - null null
+2024-06-26 10:53:28.839 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:53:28.840 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:53:28.840 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:53:28.840 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:53:28.840 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:53:28.841 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:53:28.841 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:53:28.841 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:53:28.841 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:53:28.841 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:53:28.841 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:53:28.841 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:53:28.841 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:53:28.845 +08:00 [INF] Executing endpoint 'AbpOrleansAppTemplate.Books.Services.BookAppService.GetListAsync (AbpOrleansAppTemplate.Application)'
+2024-06-26 10:53:28.869 +08:00 [INF] Route matched with {action = "GetList", controller = "Book", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[AbpOrleansAppTemplate.Books.BookDto]] GetListAsync(Volo.Abp.Application.Dtos.PagedAndSortedResultRequestDto) on controller AbpOrleansAppTemplate.Books.Services.BookAppService (AbpOrleansAppTemplate.Application).
+2024-06-26 10:53:29.020 +08:00 [INF] Executing action method AbpOrleansAppTemplate.Books.Services.BookAppService.GetListAsync (AbpOrleansAppTemplate.Application) - Validation state: "Valid"
+2024-06-26 10:53:29.237 +08:00 [INF] Executed action method AbpOrleansAppTemplate.Books.Services.BookAppService.GetListAsync (AbpOrleansAppTemplate.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 216.6688ms.
+2024-06-26 10:53:29.260 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[AbpOrleansAppTemplate.Books.BookDto, AbpOrleansAppTemplate.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-26 10:53:29.361 +08:00 [INF] Executed action AbpOrleansAppTemplate.Books.Services.BookAppService.GetListAsync (AbpOrleansAppTemplate.Application) in 490.9351ms
+2024-06-26 10:53:29.362 +08:00 [INF] Executed endpoint 'AbpOrleansAppTemplate.Books.Services.BookAppService.GetListAsync (AbpOrleansAppTemplate.Application)'
+2024-06-26 10:53:29.365 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/api/app/book - 200 null application/json; charset=utf-8 529.7793ms
+2024-06-26 10:56:48.650 +08:00 [INF] Starting AbpOrleansAppTemplate.HttpApi.Host.
+2024-06-26 10:56:52.100 +08:00 [INF] Loaded ABP modules:
+2024-06-26 10:56:52.103 +08:00 [INF] - AbpOrleansAppTemplate.AbpOrleansAppTemplateHttpApiHostModule
+2024-06-26 10:56:52.104 +08:00 [INF]   - AbpOrleansAppTemplate.AbpOrleansAppTemplateHttpApiModule
+2024-06-26 10:56:52.104 +08:00 [INF]     - AbpOrleansAppTemplate.AbpOrleansAppTemplateApplicationContractsModule
+2024-06-26 10:56:52.104 +08:00 [INF]       - AbpOrleansAppTemplate.AbpOrleansAppTemplateDomainSharedModule
+2024-06-26 10:56:52.104 +08:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2024-06-26 10:56:52.104 +08:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2024-06-26 10:56:52.104 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2024-06-26 10:56:52.104 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2024-06-26 10:56:52.104 +08:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2024-06-26 10:56:52.104 +08:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2024-06-26 10:56:52.104 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2024-06-26 10:56:52.104 +08:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2024-06-26 10:56:52.104 +08:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2024-06-26 10:56:52.104 +08:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2024-06-26 10:56:52.104 +08:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2024-06-26 10:56:52.104 +08:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2024-06-26 10:56:52.104 +08:00 [INF]               - Volo.Abp.Threading.AbpThreadingModule
+2024-06-26 10:56:52.104 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2024-06-26 10:56:52.104 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2024-06-26 10:56:52.104 +08:00 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2024-06-26 10:56:52.104 +08:00 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2024-06-26 10:56:52.104 +08:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2024-06-26 10:56:52.104 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2024-06-26 10:56:52.104 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2024-06-26 10:56:52.104 +08:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2024-06-26 10:56:52.104 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2024-06-26 10:56:52.104 +08:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2024-06-26 10:56:52.104 +08:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2024-06-26 10:56:52.104 +08:00 [INF]         - Volo.Abp.OpenIddict.AbpOpenIddictDomainSharedModule
+2024-06-26 10:56:52.104 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2024-06-26 10:56:52.104 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2024-06-26 10:56:52.104 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2024-06-26 10:56:52.104 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2024-06-26 10:56:52.104 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2024-06-26 10:56:52.104 +08:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2024-06-26 10:56:52.104 +08:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2024-06-26 10:56:52.104 +08:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2024-06-26 10:56:52.104 +08:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2024-06-26 10:56:52.104 +08:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2024-06-26 10:56:52.104 +08:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2024-06-26 10:56:52.104 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2024-06-26 10:56:52.104 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2024-06-26 10:56:52.104 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2024-06-26 10:56:52.104 +08:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2024-06-26 10:56:52.104 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2024-06-26 10:56:52.104 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2024-06-26 10:56:52.104 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2024-06-26 10:56:52.104 +08:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2024-06-26 10:56:52.104 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2024-06-26 10:56:52.104 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2024-06-26 10:56:52.104 +08:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2024-06-26 10:56:52.105 +08:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2024-06-26 10:56:52.105 +08:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2024-06-26 10:56:52.105 +08:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2024-06-26 10:56:52.105 +08:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2024-06-26 10:56:52.105 +08:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2024-06-26 10:56:52.105 +08:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2024-06-26 10:56:52.105 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2024-06-26 10:56:52.105 +08:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2024-06-26 10:56:52.105 +08:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2024-06-26 10:56:52.105 +08:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2024-06-26 10:56:52.105 +08:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2024-06-26 10:56:52.105 +08:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2024-06-26 10:56:52.105 +08:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2024-06-26 10:56:52.105 +08:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2024-06-26 10:56:52.105 +08:00 [INF]               - Volo.Abp.Caching.AbpCachingModule
+2024-06-26 10:56:52.105 +08:00 [INF]                 - Volo.Abp.Serialization.AbpSerializationModule
+2024-06-26 10:56:52.105 +08:00 [INF]               - Volo.Abp.Domain.AbpDddDomainSharedModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2024-06-26 10:56:52.105 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2024-06-26 10:56:52.105 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2024-06-26 10:56:52.105 +08:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2024-06-26 10:56:52.105 +08:00 [INF]   - AbpOrleansAppTemplate.AbpOrleansAppTemplateApplicationModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - AbpOrleansAppTemplate.AbpOrleansAppTemplateDomainModule
+2024-06-26 10:56:52.105 +08:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2024-06-26 10:56:52.105 +08:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2024-06-26 10:56:52.105 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2024-06-26 10:56:52.105 +08:00 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2024-06-26 10:56:52.105 +08:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2024-06-26 10:56:52.105 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2024-06-26 10:56:52.105 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2024-06-26 10:56:52.105 +08:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2024-06-26 10:56:52.105 +08:00 [INF]       - Volo.Abp.OpenIddict.AbpOpenIddictDomainModule
+2024-06-26 10:56:52.105 +08:00 [INF]       - Volo.Abp.PermissionManagement.OpenIddict.AbpPermissionManagementDomainOpenIddictModule
+2024-06-26 10:56:52.105 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2024-06-26 10:56:52.105 +08:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2024-06-26 10:56:52.105 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2024-06-26 10:56:52.105 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2024-06-26 10:56:52.105 +08:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2024-06-26 10:56:52.105 +08:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2024-06-26 10:56:52.105 +08:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2024-06-26 10:56:52.105 +08:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2024-06-26 10:56:52.105 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2024-06-26 10:56:52.105 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2024-06-26 10:56:52.105 +08:00 [INF]   - AbpOrleansAppTemplate.MongoDB.AbpOrleansAppTemplateMongoDbModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.PermissionManagement.MongoDB.AbpPermissionManagementMongoDbModule
+2024-06-26 10:56:52.105 +08:00 [INF]       - Volo.Abp.MongoDB.AbpMongoDbModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.SettingManagement.MongoDB.AbpSettingManagementMongoDbModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.Identity.MongoDB.AbpIdentityMongoDbModule
+2024-06-26 10:56:52.105 +08:00 [INF]       - Volo.Abp.Users.MongoDB.AbpUsersMongoDbModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.OpenIddict.MongoDB.AbpOpenIddictMongoDbModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.BackgroundJobs.MongoDB.AbpBackgroundJobsMongoDbModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.AuditLogging.MongoDB.AbpAuditLoggingMongoDbModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.TenantManagement.MongoDB.AbpTenantManagementMongoDbModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.FeatureManagement.MongoDB.AbpFeatureManagementMongoDbModule
+2024-06-26 10:56:52.105 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite.AbpAspNetCoreMvcUiLeptonXLiteThemeModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2024-06-26 10:56:52.105 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2024-06-26 10:56:52.105 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2024-06-26 10:56:52.105 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2024-06-26 10:56:52.105 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2024-06-26 10:56:52.105 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2024-06-26 10:56:52.105 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2024-06-26 10:56:52.105 +08:00 [INF]   - Volo.Abp.Account.Web.AbpAccountWebOpenIddictModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.Account.Web.AbpAccountWebModule
+2024-06-26 10:56:52.105 +08:00 [INF]       - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2024-06-26 10:56:52.105 +08:00 [INF]     - Volo.Abp.OpenIddict.AbpOpenIddictAspNetCoreModule
+2024-06-26 10:56:52.105 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2024-06-26 10:56:52.105 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2024-06-26 10:56:52.325 +08:00 [DBG] Started background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+2024-06-26 10:56:52.340 +08:00 [DBG] Started background worker: Volo.Abp.OpenIddict.Tokens.TokenCleanupBackgroundWorker
+2024-06-26 10:56:52.966 +08:00 [INF] User profile is available. Using '/Users/zhifenglee/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-06-26 10:56:53.246 +08:00 [INF] Initialized all ABP modules.
+2024-06-26 10:56:53.764 +08:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-06-26 10:56:53.813 +08:00 [INF] Now listening on: https://localhost:44376
+2024-06-26 10:56:53.815 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-26 10:56:53.817 +08:00 [INF] Hosting environment: Development
+2024-06-26 10:56:53.817 +08:00 [INF] Content root path: /Users/zhifenglee/Desktop/backend-app/AbpOrleansAppTemplate/src/AbpOrleansAppTemplate.HttpApi.Host
+2024-06-26 10:56:54.224 +08:00 [ERR] This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+MongoDB.Driver.MongoCommandException: This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+ ---> MongoDB.Driver.MongoCommandException: Command aggregate failed: Transaction numbers are only allowed on a replica set member or mongos.
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.ProcessResponse(ConnectionId connectionId, CommandMessage responseMessage)
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.ExecuteAsync(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.ExecuteProtocolAsync[TResult](IWireProtocol`1 protocol, ICoreSession session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](IRetryableReadOperation`1 operation, RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(IReadBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](IReadBinding binding, IReadOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at Volo.Abp.Domain.Repositories.MongoDB.MongoDbRepository`2.GetListAsync(Boolean includeDetails, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.FeatureManagement.StaticFeatureSaver.UpdateChangedFeatureGroupsAsync(IEnumerable`1 featureGroupRecords)
+   at Volo.Abp.FeatureManagement.StaticFeatureSaver.SaveAsync()
+   at Volo.Abp.FeatureManagement.StaticFeatureSaver.SaveAsync()
+   at Volo.Abp.FeatureManagement.StaticFeatureSaver.SaveAsync()
+   at Volo.Abp.FeatureManagement.StaticFeatureSaver.SaveAsync()
+   at Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule.<>c__DisplayClass8_0.<<SaveStaticFeaturesToDatabaseAsync>b__1>d.MoveNext()
+2024-06-26 10:56:54.224 +08:00 [ERR] This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+MongoDB.Driver.MongoCommandException: This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+ ---> MongoDB.Driver.MongoCommandException: Command aggregate failed: Transaction numbers are only allowed on a replica set member or mongos.
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.ProcessResponse(ConnectionId connectionId, CommandMessage responseMessage)
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.ExecuteAsync(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.ExecuteProtocolAsync[TResult](IWireProtocol`1 protocol, ICoreSession session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](IRetryableReadOperation`1 operation, RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(IReadBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](IReadBinding binding, IReadOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at Volo.Abp.Domain.Repositories.MongoDB.MongoDbRepository`2.GetListAsync(Boolean includeDetails, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.UpdateChangedPermissionGroupsAsync(IEnumerable`1 permissionGroupRecords)
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.SaveAsync()
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.SaveAsync()
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.SaveAsync()
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.SaveAsync()
+   at Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule.<>c__DisplayClass8_0.<<SaveStaticPermissionsToDatabaseAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.AsyncPolicy.<>c__DisplayClass40_0.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2024-06-26 10:56:54.227 +08:00 [ERR] This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+MongoDB.Driver.MongoCommandException: This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+ ---> MongoDB.Driver.MongoCommandException: Command aggregate failed: Transaction numbers are only allowed on a replica set member or mongos.
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.ProcessResponse(ConnectionId connectionId, CommandMessage responseMessage)
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.ExecuteAsync(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.ExecuteProtocolAsync[TResult](IWireProtocol`1 protocol, ICoreSession session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.ExecuteAsync[TResult](IRetryableReadOperation`1 operation, RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.ExecuteAsync(RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.ExecuteAsync(IReadBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](IReadBinding binding, IReadOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.AggregateAsync[TResult](IClientSessionHandle session, PipelineDefinition`2 pipeline, AggregateOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.ExecuteAsync(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at Volo.Abp.Domain.Repositories.MongoDB.MongoDbRepository`2.GetListAsync(Boolean includeDetails, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.SettingManagement.StaticSettingSaver.UpdateChangedSettingsAsync(List`1 SettingRecords)
+   at Volo.Abp.SettingManagement.StaticSettingSaver.SaveAsync()
+   at Volo.Abp.SettingManagement.StaticSettingSaver.SaveAsync()
+   at Volo.Abp.SettingManagement.StaticSettingSaver.SaveAsync()
+   at Volo.Abp.SettingManagement.StaticSettingSaver.SaveAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.SettingManagement.AbpSettingManagementDomainModule.<>c__DisplayClass8_0.<<SaveStaticSettingsToDatabaseAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.AsyncPolicy.<>c__DisplayClass40_0.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2024-06-26 10:56:54.360 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/ - null null
+2024-06-26 10:56:54.846 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:54.875 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:54.887 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:56:54.893 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:56:54.894 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:54.921 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:54.924 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:56:54.925 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:56:54.928 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:56:54.932 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:56:54.935 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:54.935 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:54.938 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:56:55.669 +08:00 [INF] Executing endpoint 'AbpOrleansAppTemplate.Controllers.HomeController.Index (AbpOrleansAppTemplate.HttpApi.Host)'
+2024-06-26 10:56:55.700 +08:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller AbpOrleansAppTemplate.Controllers.HomeController (AbpOrleansAppTemplate.HttpApi.Host).
+2024-06-26 10:56:55.784 +08:00 [INF] Executing action method AbpOrleansAppTemplate.Controllers.HomeController.Index (AbpOrleansAppTemplate.HttpApi.Host) - Validation state: "Valid"
+2024-06-26 10:56:55.793 +08:00 [INF] Executed action method AbpOrleansAppTemplate.Controllers.HomeController.Index (AbpOrleansAppTemplate.HttpApi.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.9526ms.
+2024-06-26 10:56:55.812 +08:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2024-06-26 10:56:55.821 +08:00 [INF] Executed action AbpOrleansAppTemplate.Controllers.HomeController.Index (AbpOrleansAppTemplate.HttpApi.Host) in 113.1038ms
+2024-06-26 10:56:55.821 +08:00 [INF] Executed endpoint 'AbpOrleansAppTemplate.Controllers.HomeController.Index (AbpOrleansAppTemplate.HttpApi.Host)'
+2024-06-26 10:56:55.855 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/ - 302 0 null 1494.8944ms
+2024-06-26 10:56:55.862 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger - null null
+2024-06-26 10:56:55.869 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:55.871 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:55.872 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:56:55.872 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:56:55.872 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:55.874 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:55.875 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:56:55.875 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:56:55.875 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:56:55.875 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:56:55.875 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:55.875 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:55.876 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:56:55.883 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger - 301 0 null 21.4785ms
+2024-06-26 10:56:55.886 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger/index.html - null null
+2024-06-26 10:56:55.892 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:55.892 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:55.893 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:56:55.893 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:56:55.893 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:55.893 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:55.893 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:56:55.893 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:56:55.893 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:56:55.893 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:56:55.893 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:55.893 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:55.893 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:56:55.980 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger/swagger-ui.css - null null
+2024-06-26 10:56:55.980 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger/ui/abp.js - null null
+2024-06-26 10:56:55.981 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger/ui/abp.swagger.js - null null
+2024-06-26 10:56:55.982 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:55.983 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:55.983 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:56:55.983 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:56:55.983 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:55.983 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:55.983 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:56:55.983 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:56:55.983 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:56:55.983 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:56:55.983 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:55.983 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:55.983 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:56:55.989 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger/index.html - 200 null text/html;charset=utf-8 103.3342ms
+2024-06-26 10:56:56.008 +08:00 [INF] Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'N/A'
+2024-06-26 10:56:56.008 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-06-26 10:56:56.008 +08:00 [INF] Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'N/A'
+2024-06-26 10:56:56.008 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger/ui/abp.js - 200 3122 application/javascript 27.6211ms
+2024-06-26 10:56:56.009 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger/ui/abp.swagger.js - 200 4510 application/javascript 28.0861ms
+2024-06-26 10:56:56.010 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger/swagger-ui.css - 200 144929 text/css 29.655ms
+2024-06-26 10:56:56.276 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger/swagger-ui-bundle.js - null null
+2024-06-26 10:56:56.276 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger/swagger-ui-standalone-preset.js - null null
+2024-06-26 10:56:56.289 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:56.289 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:56.290 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:56.290 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:56.290 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:56:56.290 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:56:56.290 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:56:56.291 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:56.291 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:56:56.291 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:56.292 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:56.292 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:56.292 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:56:56.292 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:56:56.292 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:56:56.292 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:56:56.292 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:56:56.292 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:56:56.292 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:56:56.292 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:56:56.292 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:56.292 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:56.292 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:56.292 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:56.293 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:56:56.293 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:56:56.317 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-06-26 10:56:56.319 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 44.8511ms
+2024-06-26 10:56:56.323 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-06-26 10:56:56.324 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 49.4434ms
+2024-06-26 10:56:56.686 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger/favicon-32x32.png - null null
+2024-06-26 10:56:56.692 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:56.692 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:56.692 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:56:56.692 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:56:56.692 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:56.692 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:56.693 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:56:56.693 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:56:56.693 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:56:56.693 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:56:56.693 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:56.693 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:56.693 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:56:56.698 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-06-26 10:56:56.698 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger/favicon-32x32.png - 200 628 image/png 12.8233ms
+2024-06-26 10:56:57.184 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger/favicon-32x32.png - null null
+2024-06-26 10:56:57.204 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger/v1/swagger.json - null null
+2024-06-26 10:56:57.207 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:57.207 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:57.207 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:57.207 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:57.208 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:56:57.208 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:56:57.208 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:56:57.208 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:56:57.208 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:57.208 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:57.209 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:57.209 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:57.209 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:56:57.209 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:56:57.209 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:56:57.209 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:56:57.209 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:56:57.209 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:56:57.209 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:56:57.209 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:56:57.209 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:57.209 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:57.209 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:57.209 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:57.210 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:56:57.210 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:56:57.218 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-06-26 10:56:57.220 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/swagger/favicon-32x32.png - null null
+2024-06-26 10:56:57.220 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger/favicon-32x32.png - 200 628 image/png 37.4332ms
+2024-06-26 10:56:57.222 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:57.222 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:56:57.222 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:56:57.223 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:56:57.223 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:57.224 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:56:57.224 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:56:57.224 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:56:57.224 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:56:57.224 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:56:57.225 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:57.225 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:56:57.225 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:56:57.230 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-06-26 10:56:57.230 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger/favicon-32x32.png - 200 628 image/png 10.4916ms
+2024-06-26 10:56:57.725 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 521.522ms
+2024-06-26 10:57:03.329 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/abp/Swashbuckle/SetCsrfCookie - null null
+2024-06-26 10:57:03.348 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:57:03.349 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:57:03.353 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:57:03.353 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:57:03.353 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:57:03.354 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:57:03.354 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:57:03.354 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:57:03.354 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:57:03.354 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:57:03.354 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:57:03.354 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:57:03.355 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:57:03.368 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2024-06-26 10:57:03.377 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle", page = ""}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2024-06-26 10:57:03.389 +08:00 [INF] Executing action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) - Validation state: "Valid"
+2024-06-26 10:57:03.404 +08:00 [INF] Executed action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 14.6993ms.
+2024-06-26 10:57:03.406 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 28.884ms
+2024-06-26 10:57:03.406 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2024-06-26 10:57:03.408 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/abp/Swashbuckle/SetCsrfCookie - 204 null null 79.3863ms
+2024-06-26 10:57:03.433 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44376/api/app/book - null null
+2024-06-26 10:57:03.434 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessRequestContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:57:03.434 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ResolveRequestUri.
+2024-06-26 10:57:03.434 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.OpenIddictServerHandlers+InferEndpointType.
+2024-06-26 10:57:03.434 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateTransportSecurityRequirement.
+2024-06-26 10:57:03.434 +08:00 [DBG] The event OpenIddict.Server.OpenIddictServerEvents+ProcessRequestContext was successfully processed by OpenIddict.Server.AspNetCore.OpenIddictServerAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:57:03.435 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ValidateHostHeader.
+2024-06-26 10:57:03.435 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+EvaluateValidatedTokens.
+2024-06-26 10:57:03.435 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromAuthorizationHeader.
+2024-06-26 10:57:03.435 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromBodyForm.
+2024-06-26 10:57:03.435 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.AspNetCore.OpenIddictValidationAspNetCoreHandlers+ExtractAccessTokenFromQueryString.
+2024-06-26 10:57:03.435 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was successfully processed by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:57:03.435 +08:00 [DBG] The event OpenIddict.Validation.OpenIddictValidationEvents+ProcessAuthenticationContext was marked as rejected by OpenIddict.Validation.OpenIddictValidationHandlers+ValidateRequiredTokens.
+2024-06-26 10:57:03.435 +08:00 [DBG] AuthenticationScheme: OpenIddict.Validation.AspNetCore was not authenticated.
+2024-06-26 10:57:03.437 +08:00 [INF] Executing endpoint 'AbpOrleansAppTemplate.Books.Services.BookAppService.GetListAsync (AbpOrleansAppTemplate.Application)'
+2024-06-26 10:57:03.456 +08:00 [INF] Route matched with {action = "GetList", controller = "Book", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[AbpOrleansAppTemplate.Books.BookDto]] GetListAsync(Volo.Abp.Application.Dtos.PagedAndSortedResultRequestDto) on controller AbpOrleansAppTemplate.Books.Services.BookAppService (AbpOrleansAppTemplate.Application).
+2024-06-26 10:57:03.594 +08:00 [INF] Executing action method AbpOrleansAppTemplate.Books.Services.BookAppService.GetListAsync (AbpOrleansAppTemplate.Application) - Validation state: "Valid"
+2024-06-26 10:57:03.786 +08:00 [INF] Executed action method AbpOrleansAppTemplate.Books.Services.BookAppService.GetListAsync (AbpOrleansAppTemplate.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 191.8201ms.
+2024-06-26 10:57:03.809 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[AbpOrleansAppTemplate.Books.BookDto, AbpOrleansAppTemplate.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-26 10:57:03.915 +08:00 [INF] Executed action AbpOrleansAppTemplate.Books.Services.BookAppService.GetListAsync (AbpOrleansAppTemplate.Application) in 458.2915ms
+2024-06-26 10:57:03.916 +08:00 [INF] Executed endpoint 'AbpOrleansAppTemplate.Books.Services.BookAppService.GetListAsync (AbpOrleansAppTemplate.Application)'
+2024-06-26 10:57:03.919 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44376/api/app/book - 200 null application/json; charset=utf-8 486.2795ms
+2024-06-26 10:57:11.289 +08:00 [WRN] Current database does not support transactions. Your database may remain in an inconsistent state in an error case.
+2024-06-26 10:57:13.283 +08:00 [WRN] Current database does not support transactions. Your database may remain in an inconsistent state in an error case.
+2024-06-26 10:57:14.274 +08:00 [WRN] Current database does not support transactions. Your database may remain in an inconsistent state in an error case.
